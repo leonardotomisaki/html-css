@@ -11,14 +11,31 @@
 
         table {
             width: 500px;
-            border: 2px solid black;
+            border: 1px solid black;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
         }
 
         th {
             border: 1px solid black;
             padding: 15px;
             background-color: gray;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td {
@@ -30,51 +47,171 @@
         td.num {
             text-align: right;
         }
+
+        tfoot {
+            background-color: grey;
+        }
     </style>
 </head>
 <body>
     <h1>Tabelas Grandes</h1>
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da pop. total</th>
+                <th scope="col" style="width: 50px;">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 50px;">% da pop. total</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td class="num">45.919.049</td>
-                <td class="num">21,9%</td>
+                <td class="num">44 411 238</td>
+                <td class="num">21,88%</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td class="num">21.168.791</td>
-                <td class="num">10,1%</td>
+                <td class="num">20 538 718	</td>
+                <td class="num">10,11%</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td class="num">17.264.943</td>
-                <td class="num">8,2%</td>
+                <td class="num">16 054 524</td>
+                <td class="num">7,91%</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td class="num">14.873.064</td>
-                <td class="num">7,1%</td>
+                <td class="num">14 141 626</td>
+                <td class="num">6,96%</td>
             </tr>
             <tr>
                 <td>Paraná</td>
-                <td class="num">11.433.957</td>
-                <td class="num">5,4%</td>
+                <td class="num">11 444 380</td>
+                <td class="num">5,64%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+                <td class="num">5,36%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 931</td>
+                <td class="num">4,46%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+                <td class="num">4,33%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+                <td class="num">4,1%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
+                <td class="num">3,75%</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 056 495</td>
+                <td class="num">3,47%</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 775 805</td>
+                <td class="num">3,34%</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 974 687</td>
+                <td class="num">1,96%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3 941 613</td>
+                <td class="num">1,94%</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3 833 712</td>
+                <td class="num">1,89%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 658 649	</td>
+                <td class="num">1,8%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 302 729</td>
+                <td class="num">1,63%</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 271 199</td>
+                <td class="num">1,61%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 127 683</td>
+                <td class="num">1,54%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 817 381</td>
+                <td class="num">1,39%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 757 013</td>
+                <td class="num">1,36%</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 209 558</td>
+                <td class="num">1,09%</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 581 196</td>
+                <td class="num">0,78%</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 511 460</td>
+                <td class="num">0,74%</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830 018	</td>
+                <td class="num">0,41%</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">733 759</td>
+                <td class="num">0,36%</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">636 707</td>
+                <td class="num">0,31%</td>
             </tr>
         </tbody>
         <tfoot>
-            <th>Total</th>
-            <td class="num"><strong>110.659.804</strong></td>
-            <td class="num"><strong>52,7%</strong></td>
+            <th scope="row">Total</th>
+            <td class="num"><strong>203 062 512	</strong></td>
+            <td class="num"><strong>100%</strong></td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi at quia veritatis neque sint, a voluptate fugiat? Impedit officiis autem fugiat repellat sequi voluptas neque, ratione tempora magni optio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure consectetur id, architecto, mollitia accusamus sed nemo quo impedit cum hic ullam. Itaque praesentium ullam ipsam inventore incidunt debitis. Quasi, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus cum excepturi eius fuga, praesentium corporis officia quasi mollitia modi obcaecati cupiditate deleniti totam exercitationem rerum adipisci dolorem magni saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod culpa est doloribus officiis temporibus accusamus quas doloremque corporis placeat minus, odio ex sit dicta tempore sunt atque laudantium repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est possimus molestias eligendi error libero vitae minus, voluptas vero rerum itaque excepturi eveniet optio? Odio error maxime modi sit nobis tempora!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi at quia veritatis neque sint, a voluptate fugiat? Impedit officiis autem fugiat repellat sequi voluptas neque, ratione tempora magni optio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure consectetur id, architecto, mollitia accusamus sed nemo quo impedit cum hic ullam. Itaque praesentium ullam ipsam inventore incidunt debitis. Quasi, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus cum excepturi eius fuga, praesentium corporis officia quasi mollitia modi obcaecati cupiditate deleniti totam exercitationem rerum adipisci dolorem magni saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod culpa est doloribus officiis temporibus accusamus quas doloremque corporis placeat minus, odio ex sit dicta tempore sunt atque laudantium repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est possimus molestias eligendi error libero vitae minus, voluptas vero rerum itaque excepturi eveniet optio? Odio error maxime modi sit nobis tempora!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi at quia veritatis neque sint, a voluptate fugiat? Impedit officiis autem fugiat repellat sequi voluptas neque, ratione tempora magni optio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure consectetur id, architecto, mollitia accusamus sed nemo quo impedit cum hic ullam. Itaque praesentium ullam ipsam inventore incidunt debitis. Quasi, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus cum excepturi eius fuga, praesentium corporis officia quasi mollitia modi obcaecati cupiditate deleniti totam exercitationem rerum adipisci dolorem magni saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod culpa est doloribus officiis temporibus accusamus quas doloremque corporis placeat minus, odio ex sit dicta tempore sunt atque laudantium repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est possimus molestias eligendi error libero vitae minus, voluptas vero rerum itaque excepturi eveniet optio? Odio error maxime modi sit nobis tempora!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi at quia veritatis neque sint, a voluptate fugiat? Impedit officiis autem fugiat repellat sequi voluptas neque, ratione tempora magni optio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure consectetur id, architecto, mollitia accusamus sed nemo quo impedit cum hic ullam. Itaque praesentium ullam ipsam inventore incidunt debitis. Quasi, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus cum excepturi eius fuga, praesentium corporis officia quasi mollitia modi obcaecati cupiditate deleniti totam exercitationem rerum adipisci dolorem magni saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod culpa est doloribus officiis temporibus accusamus quas doloremque corporis placeat minus, odio ex sit dicta tempore sunt atque laudantium repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est possimus molestias eligendi error libero vitae minus, voluptas vero rerum itaque excepturi eveniet optio? Odio error maxime modi sit nobis tempora!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi at quia veritatis neque sint, a voluptate fugiat? Impedit officiis autem fugiat repellat sequi voluptas neque, ratione tempora magni optio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure consectetur id, architecto, mollitia accusamus sed nemo quo impedit cum hic ullam. Itaque praesentium ullam ipsam inventore incidunt debitis. Quasi, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus cum excepturi eius fuga, praesentium corporis officia quasi mollitia modi obcaecati cupiditate deleniti totam exercitationem rerum adipisci dolorem magni saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod culpa est doloribus officiis temporibus accusamus quas doloremque corporis placeat minus, odio ex sit dicta tempore sunt atque laudantium repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est possimus molestias eligendi error libero vitae minus, voluptas vero rerum itaque excepturi eveniet optio? Odio error maxime modi sit nobis tempora!</p>
 </body>
 </html>
