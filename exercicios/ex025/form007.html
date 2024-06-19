@@ -27,8 +27,22 @@
 
         <p>
             <label for="iprof">Profissão: </label>
-            <input type="text" name="prof" id="iprof">
-            <option value=""></option>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <optgroup label="Prof 1">
+                    <option>Administrador</option>
+                    <option>Professor</option>
+                </optgroup>
+                <optgroup label="Prof 2">
+                    <option>Músico</option>
+                    <option>Programador</option>
+                </optgroup>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
         </p>
 
         <p>
