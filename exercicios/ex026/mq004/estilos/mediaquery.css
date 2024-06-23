@@ -13,7 +13,35 @@ TV: Mais de 1440
 */
 
 @media print { /*Impressão*/
-    
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background: url(../imagens/back-print.jpg); /*Desnecessario, pois não imprimi background*/ 
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after {
+        content: 'Este site foi feito por Leonardo Kazuhiro Tomisaki';
+        text-decoration: underline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#notebook {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;} 
+    img#tv {display: none;}
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px) { /*Tablet*/
