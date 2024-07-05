@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: aquamarine;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.itens {
+            background-color: rgb(199, 230, 29);
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens">Texto Aleatório</div>
+        <div class="itens">B</div>
+        <div class="itens">Texto Aleatório maior</div>
+        <div class="itens">D</div>
+        <div class="itens">Texto Aleatório ainda maior</div>
+        <div class="itens">F</div>
+        <div class="itens">Texto Aleatório maior de todos, para ocupar ainda mais espaço</div>
+    </div>
+</body>
+</html>
